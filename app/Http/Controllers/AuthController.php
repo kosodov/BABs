@@ -25,6 +25,7 @@ class AuthController extends Controller
 
     public function register(RegisterRequest $request)
     {
+        //dd($request);
         // Создание нового пользователя
         $user = User::create([
             'name' => $request->name,
